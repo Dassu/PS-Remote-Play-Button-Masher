@@ -35,6 +35,9 @@
   <PropertyGroup>
     <StartupObject>RemotePlayMasher_2020.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Masher Icon Dark.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -107,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Triangle_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masher Icon Dark.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

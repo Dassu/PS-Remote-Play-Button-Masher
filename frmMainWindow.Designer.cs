@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainWindow));
             this.btnStart = new System.Windows.Forms.Button();
             this.grpOptions = new System.Windows.Forms.GroupBox();
             this.lblMoreButtonsComing = new System.Windows.Forms.Label();
@@ -83,11 +84,11 @@
             // lblMoreButtonsComing
             // 
             this.lblMoreButtonsComing.AutoSize = true;
-            this.lblMoreButtonsComing.Location = new System.Drawing.Point(245, 81);
+            this.lblMoreButtonsComing.Location = new System.Drawing.Point(255, 73);
             this.lblMoreButtonsComing.Name = "lblMoreButtonsComing";
-            this.lblMoreButtonsComing.Size = new System.Drawing.Size(220, 15);
+            this.lblMoreButtonsComing.Size = new System.Drawing.Size(220, 30);
             this.lblMoreButtonsComing.TabIndex = 10;
-            this.lblMoreButtonsComing.Text = "Might implement other buttons one day";
+            this.lblMoreButtonsComing.Text = "Might implement other buttons one day\r\nCurrently only X is supported";
             // 
             // lblButtonPresses
             // 
@@ -123,7 +124,7 @@
             // lblWhichButton
             // 
             this.lblWhichButton.AutoSize = true;
-            this.lblWhichButton.Location = new System.Drawing.Point(82, 81);
+            this.lblWhichButton.Location = new System.Drawing.Point(9, 81);
             this.lblWhichButton.Name = "lblWhichButton";
             this.lblWhichButton.Size = new System.Drawing.Size(96, 15);
             this.lblWhichButton.TabIndex = 7;
@@ -131,44 +132,38 @@
             // 
             // picTriangle
             // 
-            this.picTriangle.Image = global::RemotePlayMasher_2020.Properties.Resources.Triangle;
-            this.picTriangle.Location = new System.Drawing.Point(331, 72);
+            this.picTriangle.Image = global::RemotePlayMasher_2020.Properties.Resources.Triangle_Green;
+            this.picTriangle.Location = new System.Drawing.Point(217, 72);
             this.picTriangle.Name = "picTriangle";
             this.picTriangle.Size = new System.Drawing.Size(32, 32);
             this.picTriangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTriangle.TabIndex = 6;
             this.picTriangle.TabStop = false;
-            this.picTriangle.Visible = false;
-            this.picTriangle.Click += new System.EventHandler(this.picButtonClicked);
             // 
             // picCircle
             // 
-            this.picCircle.Image = global::RemotePlayMasher_2020.Properties.Resources.Circle;
-            this.picCircle.Location = new System.Drawing.Point(289, 72);
+            this.picCircle.Image = global::RemotePlayMasher_2020.Properties.Resources.Circle_Red;
+            this.picCircle.Location = new System.Drawing.Point(180, 72);
             this.picCircle.Name = "picCircle";
             this.picCircle.Size = new System.Drawing.Size(32, 32);
             this.picCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCircle.TabIndex = 5;
             this.picCircle.TabStop = false;
-            this.picCircle.Visible = false;
-            this.picCircle.Click += new System.EventHandler(this.picButtonClicked);
             // 
             // picSquare
             // 
-            this.picSquare.Image = global::RemotePlayMasher_2020.Properties.Resources.Square;
-            this.picSquare.Location = new System.Drawing.Point(248, 72);
+            this.picSquare.Image = global::RemotePlayMasher_2020.Properties.Resources.Square_Pink;
+            this.picSquare.Location = new System.Drawing.Point(144, 72);
             this.picSquare.Name = "picSquare";
             this.picSquare.Size = new System.Drawing.Size(32, 32);
             this.picSquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSquare.TabIndex = 4;
             this.picSquare.TabStop = false;
-            this.picSquare.Visible = false;
-            this.picSquare.Click += new System.EventHandler(this.picButtonClicked);
             // 
             // picCross
             // 
             this.picCross.Image = global::RemotePlayMasher_2020.Properties.Resources.Cross;
-            this.picCross.Location = new System.Drawing.Point(207, 72);
+            this.picCross.Location = new System.Drawing.Point(108, 72);
             this.picCross.Name = "picCross";
             this.picCross.Size = new System.Drawing.Size(32, 32);
             this.picCross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +177,7 @@
             this.lblNotice.Name = "lblNotice";
             this.lblNotice.Size = new System.Drawing.Size(281, 36);
             this.lblNotice.TabIndex = 2;
-            this.lblNotice.Text = "Press ALT+CTRL+BACKSPACE to cancel the mashing at any time";
+            this.lblNotice.Text = "Press CTRL+SHIFT+BACKSPACE to cancel the mashing at any time";
             this.lblNotice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblWindowFocus
@@ -199,8 +194,8 @@
             this.cboWindowFocus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboWindowFocus.FormattingEnabled = true;
             this.cboWindowFocus.Items.AddRange(new object[] {
-            "Focus PS Remote Play Window (Reliable)",
-            "Do NOT Focus PS Remote Play Window (Less Reliable)"});
+            "Force Focus PS Remote Play Window",
+            "Do NOT Focus PS Remote Play Window"});
             this.cboWindowFocus.Location = new System.Drawing.Point(109, 35);
             this.cboWindowFocus.Name = "cboWindowFocus";
             this.cboWindowFocus.Size = new System.Drawing.Size(368, 21);
@@ -213,6 +208,7 @@
             this.ClientSize = new System.Drawing.Size(507, 251);
             this.Controls.Add(this.grpOptions);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmMainWindow";
             this.Text = "PS Remote Play Button Masher";

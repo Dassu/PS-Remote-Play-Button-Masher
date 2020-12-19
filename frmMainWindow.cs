@@ -37,7 +37,7 @@ namespace RemotePlayMasher_2020
         {
             InitializeComponent();
             ghk = new KeyHandler(Keys.Back, this);
-            ghk.Register();
+            ghk.Register(6);
         }
 
         private void StartMasherThread()
@@ -54,7 +54,6 @@ namespace RemotePlayMasher_2020
                         IntPtr zero = IntPtr.Zero;
                         for (int i = 0; (i < 60) && (zero == IntPtr.Zero); i++)
                         {
-                            Thread.Sleep(500);
                             zero = FindWindow(null, "PS Remote Play");
                         }
                         while (true)
@@ -87,7 +86,6 @@ namespace RemotePlayMasher_2020
                         IntPtr zero = IntPtr.Zero;
                         for (int i = 0; (i < 60) && (zero == IntPtr.Zero); i++)
                         {
-                            Thread.Sleep(500);
                             zero = FindWindow(null, "PS Remote Play");
                         }
                         while (true)
