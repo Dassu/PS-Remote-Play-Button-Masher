@@ -182,7 +182,7 @@
             this.lblNotice.Name = "lblNotice";
             this.lblNotice.Size = new System.Drawing.Size(195, 36);
             this.lblNotice.TabIndex = 2;
-            this.lblNotice.Text = "Press BACKSPACE to cancel the mashing at any time";
+            this.lblNotice.Text = "Press ALT+BACKSPACE to cancel the mashing at any time";
             this.lblNotice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblWindowFocus
