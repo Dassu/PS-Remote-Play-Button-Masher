@@ -178,11 +178,11 @@
             // 
             // lblNotice
             // 
-            this.lblNotice.Location = new System.Drawing.Point(40, 177);
+            this.lblNotice.Location = new System.Drawing.Point(9, 177);
             this.lblNotice.Name = "lblNotice";
-            this.lblNotice.Size = new System.Drawing.Size(195, 36);
+            this.lblNotice.Size = new System.Drawing.Size(281, 36);
             this.lblNotice.TabIndex = 2;
-            this.lblNotice.Text = "Press ALT+BACKSPACE to cancel the mashing at any time";
+            this.lblNotice.Text = "Press ALT+CTRL+BACKSPACE to cancel the mashing at any time";
             this.lblNotice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblWindowFocus

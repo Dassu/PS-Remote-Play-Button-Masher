@@ -34,7 +34,9 @@ namespace RemotePlayMasher_2020
 
         public bool Register()
         {
-            return RegisterHotKey(hWnd, id, 1, key);
+            //1 = ALT
+            //2 = CTRL
+            return RegisterHotKey(hWnd, id, 3, key);
         }
 
         public bool Unregiser()
